@@ -39,6 +39,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "StartForm";
             StartPosition = FormStartPosition.CenterScreen;
+            Load += StartForm_Load;
             ResumeLayout(false);
         }
 

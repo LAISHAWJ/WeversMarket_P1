@@ -6,5 +6,10 @@ namespace WeversMarket_1
         {
             InitializeComponent();
         }
+
+        private void StartForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
