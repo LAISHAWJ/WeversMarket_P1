@@ -7,9 +7,11 @@ namespace WeversMarket_1
             InitializeComponent();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void BtNext_Click(object sender, EventArgs e)
         {
-
+            PrincipalMenu principalMenu = new PrincipalMenu();
+            this.Hide();
+            principalMenu.Show();
         }
     }
 }

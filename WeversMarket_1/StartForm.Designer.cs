@@ -28,7 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
+            pictureBox1 = new PictureBox();
+            BtNext = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Cornsilk;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(161, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(667, 685);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // BtNext
+            // 
+            BtNext.BackgroundImage = (Image)resources.GetObject("BtNext.BackgroundImage");
+            BtNext.BackgroundImageLayout = ImageLayout.Center;
+            BtNext.Cursor = Cursors.Hand;
+            BtNext.FlatStyle = FlatStyle.Flat;
+            BtNext.ForeColor = Color.Cornsilk;
+            BtNext.Location = new Point(928, 576);
+            BtNext.Name = "BtNext";
+            BtNext.Size = new Size(110, 102);
+            BtNext.TabIndex = 1;
+            BtNext.UseVisualStyleBackColor = true;
+            BtNext.Click += BtNext_Click;
             // 
             // StartForm
             // 
@@ -36,13 +65,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cornsilk;
             ClientSize = new Size(1050, 690);
+            Controls.Add(BtNext);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "StartForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += StartForm_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
+        private Button BtNext;
     }
 }
